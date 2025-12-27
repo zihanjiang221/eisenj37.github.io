@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="你的名字｜个人主页：研究、项目与联系信息" />
+  <title>你的名字 | Personal Website</title>
+
+  <!-- 关键：使用相对路径，避免 GitHub Pages 项目页路径问题 -->
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- 可选：社交分享卡片 -->
+  <meta property="og:title" content="你的名字 | Personal Website" />
+  <meta property="og:description" content="研究方向、项目与联系信息" />
+  <meta property="og:type" content="website" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="avatar" aria-hidden="true">Z</div>
+        <div>
+          <h1 class="name">你的名字</h1>
+          <p class="tagline">Zhejiang University · Adversarial ML · Robotics/CPS</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="主导航">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>你好，我是<span class="accent">你的名字</span>。</h2>
+          <p>
+            我关注 <strong>对抗鲁棒性</strong>、<strong>视觉-语言模型安全</strong> 与 <strong>机器人/自动驾驶可靠性</strong>。
+            这里汇总我的研究兴趣、项目与联系信息。
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#projects">查看项目</a>
+            <a class="btn" href="#contact">联系我</a>
+          </div>
+
+          <div class="links-row" aria-label="外部链接">
+            <a href="https://github.com/你的GitHub用户名" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+            <a href="./assets/cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+          </div>
+        </div>
+
+        <div class="hero-card" role="region" aria-label="简介卡片">
+          <div class="card">
+            <h3>Quick Facts</h3>
+            <ul class="fact-list">
+              <li><span class="k">Research</span><span class="v">Robust ML / VLM Security</span></li>
+              <li><span class="k">Focus</span><span class="v">Reliable Autonomous Systems</span></li>
+              <li><span class="k">Email</span><span class="v"><a href="mailto:you@example.com">you@example.com</a></span></li>
+              <li><span class="k">Location</span><span class="v">Hangzhou / Singapore</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>一句话概括你是谁、你在做什么、你要去哪里。</p>
+        </div>
+
+        <div class="grid two">
+          <div class="card">
+            <h3>Bio</h3>
+            <p>
+              这里写 5–8 句简介：学校、年级、研究方向、合作经历、未来计划等。
+              建议用事实与关键词，少用空泛形容词。
+            </p>
+            <p class="muted">
+              示例：我在浙大从事对抗鲁棒性研究，尝试通过 ISP 预处理与梯度处理提升模型在 FGSM/i-FGSM 等攻击下的稳健性。
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Interests</h3>
+            <div class="pill-row">
+              <span class="pill">Adversarial Robustness</span>
+              <span class="pill">Vision-Language Models</span>
+              <span class="pill">Autonomous Driving</span>
+              <span class="pill">Cyber-Physical Systems</span>
+              <span class="pill">Verification / Safety</span>
+            </div>
+            <div class="divider"></div>
+            <h3>Now</h3>
+            <ul class="list">
+              <li>正在做：某个课题 / 项目（可写一行）</li>
+              <li>正在准备：申请 / 论文 / Demo（可写一行）</li>
+              <li>近期目标：某个 milestone（可写一行）</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>精选 3–6 个项目，展示你“做过什么”。</p>
+        </div>
+
+        <div class="grid three">
+          <article class="card project">
+            <div class="project-top">
+              <h3>Project Title A</h3>
+              <span class="badge">Research</span>
+            </div>
+            <p class="muted">
+              用 2–3 句说明：问题、方法、结果。尽量带指标或产出（论文/代码/数据集）。
+            </p>
+            <ul class="list compact">
+              <li>Method: ISP preprocessing + gradient processing</li>
+              <li>Result: improves robustness under FGSM/i-FGSM</li>
+            </ul>
+            <div class="actions">
+              <a class="text-link" href="#">Code</a>
+              <a class="text-link" href="#">Paper</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>Project Title B</h3>
+              <span class="badge">Engineering</span>
+            </div>
+            <p class="muted">
+              用 2–3 句描述工程系统/平台/工具链：规模、难点、你的贡献。
+            </p>
+            <ul class="list compact">
+              <li>Built multi-model VLM eval pipeline</li>
+              <li>Tracked GPU memory/latency metrics</li>
+            </ul>
+            <div class="actions">
+              <a class="text-link" href="#">Repo</a>
+              <a class="text-link" href="#">Demo</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>Project Title C</h3>
+              <span class="badge">Course</span>
+            </div>
+            <p class="muted">
+              课程项目也可以写，但强调可复现与工程质量：文档、测试、部署。
+            </p>
+            <ul class="list compact">
+              <li>Implemented X, evaluated on Y</li>
+              <li>Documentation + reproducible scripts</li>
+            </ul>
+            <div class="actions">
+              <a class="text-link" href="#">Report</a>
+              <a class="text-link" href="#">Slides</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Publications</h2>
+          <p>没有论文也没关系：可以放 preprint、technical report、或正在投稿的工作。</p>
+        </div>
+
+        <div class="card">
+          <ol class="pub-list">
+            <li>
+              <div class="pub-title">Paper / Preprint Title</div>
+              <div class="pub-meta">Your Name, Coauthors · Venue / arXiv · 2025</div>
+              <div class="pub-links">
+                <a href="#" class="text-link">PDF</a>
+                <a href="#" class="text-link">Code</a>
+                <a href="#" class="text-link">BibTeX</a>
+              </div>
+            </li>
+            <li>
+              <div class="pub-title">Another Work</div>
+              <div class="pub-meta">Your Name · Under Review · 2025</div>
+              <div class="pub-links">
+                <a href="#" class="text-link">Draft</a>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>把联系渠道写清楚，并确保邮箱可点。</p>
+        </div>
+
+        <div class="grid two">
+          <div class="card">
+            <h3>Email</h3>
+            <p><a href="mailto:you@example.com">you@example.com</a></p>
+            <p class="muted">建议再补一个备用邮箱或学术邮箱。</p>
+          </div>
+
+          <div class="card">
+            <h3>Links</h3>
+            <ul class="list">
+              <li><a href="https://github.com/你的GitHub用户名" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> 你的名字</span>
+      <span class="muted">Built with plain HTML/CSS · Hosted on GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script>
+    // 小脚本：年份自动更新（不依赖任何外部库）
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
